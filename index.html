@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------------------- CSS -------------------------------->
+    <link rel="stylesheet" href="./src/css/output.css">
+    <!-------------------------------- REMIX ICON -------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-------------------------------- VANILLA-TILT -------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-------------------------------- ANIMATE ON SCROLL -------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-------------------------------- HEADER -------------------------------->
+    <div data-include="./components/header.html"></div>
+
+    <!-------------------------------- MAIN -------------------------------->
+    <main>
+        <!-------------------------------- HOME -------------------------------->
+        <section id="home">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center gap-5 md:flex-row">
+                    <!-- content -->
+                    <div class="w-full space-y-5 lg:w-1/2">
+                        <h1>
+                            Développeur Web & Mobile Backend
+                        </h1>
+                        <p>
+                            Je suis un développeur fullstack orienté <span class="font-bold">backend</span> (Python, JavaScript) avec une solide expérience en développement mobile. Mon travail allie performance, sécurité et évolutivité. <br> Au-delà du code, je suis animé par une réelle passion pour la gestion de projets informatiques avec le souci constant d'allier performance technique, vision stratégique et sécurité systèmes. <br> Mon intérêt pour le cloud computing et la cybersécurité complète mon profil , dans une optique de bâtir des solutions fiables, scalables et bien pilotées.
+                        </p>
+                        <div class="flex flex-col gap-2 sm:flex-row md:gap-2 lg:pt-5 xl:pt-6">
+                            <button class="btn">
+                                <span>Télécharger CV</span>
+                                <i class="ri-file-download-line"></i>
+                            </button>
+                            <!-- SOCIAL NETWORK -->
+                            <div class="ml-6 flex items-center gap-3 text-lg">
+                                <i class="ri-whatsapp-line cursor-pointer duration-300 text-slate-300 hover:text-yellow-200"></i>
+                                <i class="ri-linkedin-fill cursor-pointer duration-300 text-slate-300 hover:text-yellow-200"></i>
+                                <i class="ri-mail-line cursor-pointer duration-300 text-slate-300 hover:text-yellow-200"></i>
+                                <i class="ri-github-fill cursor-pointer duration-300 text-slate-300 hover:text-yellow-200"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm font-DancingScript">
+                            Construisons ensemble le futur du numérique !
+                        </p>
+                        
+                    </div>
+
+                    <!-- image -->
+                    <div class="w-full relative">
+                        <img src="./img/img-home.jpg" alt="home_img" class="my-10 max-w-[80%] duration-300 origin-center rotate-12 rounded-lg hover:rotate-0 hover:blur-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------- SKILLS -------------------------------->
+        <section id="skills">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">My Soft-Skills</h2>    
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-5 md:gap-10 mt-10">
+                    <!-- tailwind icon -->
+                    <div class="skills_card max-w-44 w-full">
+                        <div class="grid bg-sectionColor hover:bg-yellow-200 place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[50%] hover:grayscale-0 border border-transparent hover:border-yellow-300 duration-300">
+                            <img src="./img/tailwind.png" alt="tailwind" class="max-w-24">
+                        </div>
+                        <p class="text-center mt-3 capitalize font-bold font-LobsterTwo">Tailwind CSS</p>
+                    </div>
+
+                    <!-- javascript icon -->
+                    <div class="skills_card max-w-44 w-full">
+                        <div class="grid bg-sectionColor hover:bg-yellow-200 place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[50%] hover:grayscale-0 border border-transparent hover:border-yellow-300 duration-300">
+                            <img src="./img/javascript.png" alt="js" class="max-w-28">
+                        </div>
+                        <p class="text-center mt-3 capitalize font-bold font-LobsterTwo">JavaScript</p>
+                    </div>
+
+                    <!-- python icon -->
+                    <div class="skills_card max-w-44 w-full">
+                        <div class="grid bg-sectionColor hover:bg-yellow-200 place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[50%] hover:grayscale-0 border border-transparent hover:border-yellow-300 duration-300">
+                            <img src="./img/python.png" alt="python" class="max-w-28">
+                        </div>
+                        <p class="text-center mt-3 capitalize font-bold font-LobsterTwo">Python</p>
+                    </div>
+
+                    <!-- django icon -->
+                    <div class="skills_card max-w-44 w-full">
+                        <div class="grid bg-sectionColor hover:bg-yellow-200 place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[50%] hover:grayscale-0 border border-transparent hover:border-yellow-300 duration-300">
+                            <img src="./img/django.png" alt="django" class="max-w-28">
+                        </div>
+                        <p class="text-center mt-3 capitalize font-bold font-LobsterTwo">Django</p>
+                    </div>
+
+                    <!-- flutter icon -->
+                    <div class="skills_card max-w-44 w-full">
+                        <div class="grid bg-sectionColor hover:bg-yellow-200 place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[50%] hover:grayscale-0 border border-transparent hover:border-yellow-300 duration-300">
+                            <img src="./img/flutter.png" alt="flutter" class="max-w-28">
+                        </div>
+                        <p class="text-center mt-3 capitalize font-bold font-LobsterTwo">Flutter</p>
+                    </div>
+
+                    <!-- vue.js icon -->
+                    <div class="skills_card max-w-44 w-full">
+                        <div class="grid bg-sectionColor hover:bg-yellow-200 place-items-center px-4 py-7 rounded-3xl space-y-5 grayscale-[50%] hover:grayscale-0 border border-transparent hover:border-yellow-300 duration-300">
+                            <img src="./img/vue_js.jpg" alt="vue_js" class="max-w-28">
+                        </div>
+                        <p class="text-center mt-3 capitalize font-bold font-LobsterTwo">Vue JS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------- PROJECTS -------------------------------->
+        <section id="projects">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">Projects</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------- CONTACTS -------------------------------->
+        <section id="contacts">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">Contacts</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-------------------------------- FOOTER -------------------------------->
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./src/js/include.js"></script>
+</body>
+</html>

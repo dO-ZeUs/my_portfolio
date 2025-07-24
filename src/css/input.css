@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/********************************************* PERSONNALISATION DU CSS *********************************************/
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply tracking-wider;
+}
+
+section {
+  @apply py-20 md:py-28 bg-sectionColor;
+}
+
+h1 {
+  @apply text-3xl md:text-4xl xl:text-5xl font-bold font-DancingScript;
+}
+
+.nav-link {
+  @apply text-lg font-bold duration-500;
+}
+
+.active {
+  @apply text-yellow-300;
+}
+
+.nav-link:hover {
+  @apply text-yellow-300;
+}
+
+.btn {
+  @apply border border-yellow-900 bg-yellow-200 rounded-md px-5 py-2 duration-300;
+}
+
+.btn span {
+  @apply font-bold;
+}
+
+.btn:hover {
+  @apply opacity-90;
+}
+
+.subtitle {
+  @apply text-3xl md:text-4xl lg:text-5xl font-DancingScript;
+}
+
+/* My Skills */
+
+.skills_card img {
+  @apply duration-300;
+}
+
+.skills_card:hover {
+  @apply scale-110;
+}
