@@ -20,7 +20,7 @@ module.exports = {
       LobsterTwo: ["LobsterTwo", "sans-serif"]
     },
     colors: {
-      'sectionColor': '#556A58',
+      'sectionColor': '#FFFACD',
       'headerColor': '#268D14',
       'navColor': '#AFD0BF',
       ...require('tailwindcss/colors')

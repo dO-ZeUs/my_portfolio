@@ -15,7 +15,10 @@
 ```
     git add .
     git commit -m "Expliquer le commit"
-    git push
+    git branch -M main
+    git push origin main
 ```
 
 ## Tailwind 3.4.17
+
+## Ajouter une bibliothèque JS "scroll reveal"

@@ -27,15 +27,15 @@ h1 {
 }
 
 .active {
-  @apply text-yellow-300;
+  @apply text-cyan-600;
 }
 
 .nav-link:hover {
-  @apply text-yellow-300;
+  @apply text-cyan-600;
 }
 
 .btn {
-  @apply border border-yellow-900 bg-yellow-200 rounded-md px-5 py-2 duration-300;
+  @apply border border-black bg-gradient-to-r  from-yellow-300 to-blue-500 rounded-md px-5 py-2 duration-300;
 }
 
 .btn span {
@@ -58,4 +58,41 @@ h1 {
 
 .skills_card:hover {
   @apply scale-110;
+}
+
+/* Contacts | form */
+
+input,
+textarea {
+  @apply w-full border border-gray-800 px-4 py-3 rounded-lg;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  @apply outline-none border-blue-500;
+}
+
+/* Projects | img */
+
+.card img {
+  @apply w-full duration-300;
+}
+
+.card:hover img {
+  @apply scale-110;
+}
+
+.card div, 
+.card .card_info p {
+  @apply duration-300;
+}
+
+.card:hover .card_info {
+  @apply bg-blue-500 text-white;
+}
+
+.card:hover .card_info p {
+  @apply text-white;
 }
